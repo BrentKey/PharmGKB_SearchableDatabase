@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Brent Key - PharmGKB Searchable Database</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/search_pgkb.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/search_pgkb.js"></script>
+</head>
+
+<body id="main">
+
+        <h1>PharmGKB Database; Edited and formatted for Gene and Drug Exploration</h1>
+    <form name="dg_search" id="dg_search" action="">
+        <input name="search_term" type="search" value="" autofocus="autofocus" placeholder="Enter a drug, gene, or gene symbol:"/>
+        <input name="submit" type="submit" id="submit" value="submit">
+    </form>
+    <section id='results'>
+        <p>
+            <span id='match_count'>0</span> match(es) found.
+        </p>
+        <table>
+            <thead>
+            <tr>
+                <td>Drug Name</td>
+                <td>Drug Name - Generic</td>
+                <td>Drug Name - Trade</td>
+                <td>Reference SNP(s)</td>
+                <td>Drug Approval</td>
+                <td>Suggested testing for Drug Administration</td>
+                <td>Chromosome of Gene Location</td>
+                <td>Gene Name</td>
+                <td>Gene Symbol(s)</td>
+            </tr>
+            </thead>
+            <tbody>
+                <!-- filled in by javascript when results present -->
+            </tbody>
+    </section>
+
+</body>
+
+</html>
